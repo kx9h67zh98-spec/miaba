@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="/MDB5-STANDARD-UI-KIT-Free-9 copy/css/mdb.min.css" />
+    <link rel="icon" href="/MDB5-STANDARD-UI-KIT-Free-9 copy/img/mdb-favicon.ico" type="image/x-icon" />
+    <!-- one word -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Cursive:wght@400..700&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <script src="script.js" defer></script>
+    <title>Miaba's Website</title>
+</head>
+
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark d-none d-lg-block" style="z-index: 2000;">
+    <div class="container-fluid">
+      <!-- Navbar brand -->
+      <a class="navbar-brand nav-link" target="_blank" href="index.html">
+        <strong class="cursive-word">Miaba</strong>
+      </a>
+      <button class="navbar-toggler" type="button" data-mdb-collapse-init data-mdb-target="#navbarExample01"
+              aria-controls="navbarExample01" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarExample01">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item active">
+            <a class="nav-link" aria-current="page" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Detail-1.html">My Profile</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" target="_blank">My Shelf</a>
+          </li> 
+        </ul>
+
+        <ul class="navbar-nav d-flex flex-row">
+          <!-- Icons -->
+          <li class="nav-item me-3 me-lg-0">
+            <a class="nav-link" href="https://www.youtube.com/@miaba5547" rel="nofollow"
+               target="_blank">
+              <i class="fab fa-youtube"></i>
+            </a>
+          </li>
+          <li class="nav-item me-3 me-lg-0">
+            <a class="nav-link" href="https://www.facebook.com/aoduyanh.989023" rel="nofollow" target="_blank">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+          </li>
+          <li class="nav-item me-3 me-lg-0">
+            <a class="nav-link" href="https://www.instagram.com/m1abaa/" rel="nofollow" target="_blank">
+              <i class="fab fa-instagram"></i>
+            </a>
+          </li>
+          <li class="nav-item me-3 me-lg-0">
+            <a class="nav-link" href="https://x.com/Miaba339997" rel="nofollow" target="_blank">
+              <i class="fab fa-twitter"></i>
+            </a>
+          </li>
+          <li class="nav-item me-3 me-lg-0">
+            <a class="nav-link" href="https://github.com/M1aba" rel="nofollow" target="_blank">
+              <i class="fab fa-github"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- Navbar -->
+
+  <!-- Carousel wrapper -->
+  <div id="introCarousel" class="carousel slide carousel-fade shadow-2-strong" data-mdb-carousel-init>
+    <!-- Indicators -->
+    <div class="carousel-indicators">
+      <li data-mdb-target="#introCarousel" data-mdb-slide-to="0" class="active"></li>
+      <li data-mdb-target="#introCarousel" data-mdb-slide-to="1"></li>
+    </div>
+
+    <!-- Inner -->
+    <div class="carousel-inner">
+      <!-- Single item -->
+      <div class="carousel-item active">
+        <div class="mask" style="background-color: rgba(0, 0, 0, 0.6);">
+          <div class="d-flex justify-content-center align-items-center h-100">
+            <div class="text-white text-center" data-mdb-theme="dark">
+              <h1 class="mb-3">Hi, my name is Duy Anh</h1>
+              <h5 class="mb-4">A second-year university student with a passion for coding</h5>
+              <a
+                 class="btn btn-outline-light btn-lg m-2" data-mdb-ripple-init
+                 role="button"
+                 rel="nofollow"
+                 target="_blank"
+                 href="javascript:void(0);" onclick="scrollToFooter()"
+                 >Contact For Work</a
+                >
+              <a
+                 class="btn btn-outline-light btn-lg m-2" data-mdb-ripple-init
+                 href="Detail-1.html"
+                 role="button"
+                 >My Profile</a
+                >
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Single item -->
+      <div class="carousel-item">
+        <div class="mask" style="background-color: rgba(0, 0, 0, 0.7);">
+          <div class="d-flex justify-content-center align-items-center h-100">
+            <div class="text-white text-center">
+              <h3 style="color: #E0E0E0;">As a passionate and dedicated student, I am eager to apply my skills and creativity to contribute to your team. Through my university projects, I have developed strong problem-solving abilities and the capacity to innovate in collaborative environments. I am enthusiastic about bringing fresh ideas, a strong work ethic, and a willingness to learn from talented professionals, while making a meaningful contribution to your organization.</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Inner -->
+
+    <!-- Controls -->
+    <a class="carousel-control-prev" href="#introCarousel" role="button" data-mdb-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#introCarousel" role="button" data-mdb-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+  <!-- Carousel wrapper -->
+</header>
+<!--Main Navigation-->
+
+<!--Main layout-->
+<main class="mt-5">
+  <div class="container">
+    <!--Section: Content-->
+    <section>
+      <div class="row">
+        <div class="col-md-6 gx-5 mb-4">
+          <div class="bg-image hover-overlay shadow-2-strong" data-mdb-ripple-init data-mdb-ripple-color="light">
+            <img src="https://mdbootstrap.com/img/new/slides/031.jpg" class="img-fluid" />
+            <a href="#!">
+              <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+            </a>
+          </div>
+        </div>
+
+        <div class="col-md-6 gx-5 mb-4">
+          <h4><strong>About My Life</strong></h4>
+          <p class="text-muted">
+            Having developed a passion for coding since the age of five, I earned admission to my dream university and am now dedicated to mastering my craft and building a career as a skilled programmer.
+          </p>
+          <p><strong>The reason why I love coding and have a passion for it?</strong></p>
+          <p class="text-muted">
+            The reason behind my love and passion for coding goes back to my childhood. I remember constantly asking my mother questions about things I didn’t know. Her answer was often, “Just ask Google.” That simple suggestion sparked my curiosity — I began to wonder how Google could provide answers to almost every question I asked. This fascination with technology and problem-solving eventually grew into my passion for coding.
+          </p>
+        </div>
+      </div>
+    </section>
+    <!--Section: Content-->
+
+    <hr class="my-5" />
+
+    <!--Section: Content-->
+    <section class="text-center">
+      <h4 class="mb-5"><strong>Things I Can Do</strong></h4>
+
+      <div class="row">
+        <div class="col-lg-4 col-md-12 mb-4">
+          <div class="card">
+            <div class="bg-image hover-overlay" data-mdb-ripple-init data-mdb-ripple-color="light">
+              <img
+                   src="Images/front-end.png"
+                   class="img-fluid"
+                   />
+              <a href="#!">
+                <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+              </a>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Front End</h5>
+              <p class="card-text">
+                Discover how I’ve built engaging, responsive interfaces and brought designs to life — click below to explore my front-end journey.
+              </p>
+              <a href="#!" class="btn btn-primary" data-mdb-ripple-init>FOR MORE</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="card">
+            <div class="bg-image hover-overlay" data-mdb-ripple-init data-mdb-ripple-color="light">
+              <img
+                   src="Images/lap-trinh-backend.png"
+                   class="img-fluid"
+                   />
+              <a href="#!">
+                <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+              </a>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Back End</h5>
+              <p class="card-text">
+                See how I’ve created the logic, structure, and data handling that power applications — click below to explore my back-end experience.
+              </p>
+              <a href="#!" class="btn btn-primary" data-mdb-ripple-init>FOR MORE</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="card">
+            <div class="bg-image hover-overlay" data-mdb-ripple-init data-mdb-ripple-color="light">
+              <img
+                   src="Images/unity-developer-for-hire-1200-x-628-1024x536.png.webp"
+                   class="img-fluid"
+                   />
+              <a href="#!">
+                <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+              </a>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Unity</h5>
+              <p class="card-text">
+                Step into the world of my game development projects, from gameplay mechanics to immersive environments — click below to explore my Unity work.
+              </p>
+              <a href="#!" class="btn btn-primary" data-mdb-ripple-init>FOR MORE</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--Section: Content-->
+
+    <hr class="my-5" />
+
+    <!--Section: Content-->
+    <section class="mb-5">
+      <h4 class="mb-5 text-center" id="pageFooter">
+        <strong id="footer">Leave Your Information Here</strong>
+      </h4>
+      <div class="row d-flex justify-content-center">
+        <div class="col-md-6">
+          <form id="myForm" action="/submit" method="POST">
+            <div class="row mb-4">
+              <div class="col">
+                <div class="form-outline mb-4">
+                  <input type="text" id="firstName" name="firstName" class="form-control" />
+                  <label class="form-label" for="firstName">First name</label>
+                  <div class="error-message" id="firstNameError">Please enter a valid first name.</div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="form-outline mb-4">
+                  <input type="text" id="lastName" name="lastName" class="form-control" />
+                  <label class="form-label" for="lastName">Last name</label>
+                  <div class="error-message" id="lastNameError">Please enter a valid last name.</div>
+                </div>
+              </div>
+            </div>
+          
+            <!-- Email -->
+            <div class="form-outline mb-4">
+              <input type="email" id="formEmail" name="email" class="form-control" />
+              <label class="form-label" for="formEmail">Email address</label>
+              <div class="error-message" id="emailError">Please enter a valid email.</div>
+            </div>
+          
+            <!-- Phone -->
+            <div class="form-outline mb-4" style="width: 22rem;">
+              <input type="tel" id="typePhone" name="phone" class="form-control" />
+              <label class="form-label" for="typePhone">Phone number</label>
+              <div class="error-message" id="phoneError">Enter a valid phone number (10–15 digits).</div>
+            </div>
+          
+            <!-- Message -->
+            <div class="form-outline">
+              <textarea class="form-control" id="textAreaExample" name="message" rows="4"></textarea>
+              <label class="form-label" for="textAreaExample">Message</label>
+              <div class="error-message" id="messageError">Message must be at least 10 characters.</div>
+            </div>
+          
+            <!-- Checkbox -->
+            <div class="form-check d-flex justify-content-center mb-4">
+              <input class="form-check-input me-2" type="checkbox" id="form2Example3" name="subscribe" value="yes" checked />
+              <label class="form-check-label" for="form2Example3">Subscribe to our newsletter</label>
+            </div>
+          
+            <!-- Submit button -->
+            <button type="submit" class="btn btn-primary btn-block mb-4">Submit</button>
+          </form>          
+        </div>
+      </div>
+    </section>
+    <!--Section: Content-->
+  </div>
+</main>
+<!--Main layout-->
+
+<!-- Main Content -->
+
+<!-- Main Content -->
+
+<!--Footer-->
+<footer class="bg-light text-lg-start">
+  <hr class="m-0" />
+
+  <div class="text-center py-4 align-items-center">
+    <p>Follow Miaba on social media</p>
+    <a
+       href="https://www.youtube.com/@miaba5547"
+       class="btn btn-primary m-1" data-mdb-ripple-init
+       role="button"
+       rel="nofollow"
+       target="_blank"
+       >
+      <i class="fab fa-youtube"></i>
+    </a>
+    <a
+       href="https://www.facebook.com/aoduyanh.989023"
+       class="btn btn-primary m-1" data-mdb-ripple-init
+       role="button"
+       rel="nofollow"
+       target="_blank"
+       >
+      <i class="fab fa-facebook-f"></i>
+    </a>
+    <a
+       href="https://x.com/Miaba339997"
+       class="btn btn-primary m-1"
+       role="button"
+       rel="nofollow"
+       target="_blank"
+       >
+      <i class="fab fa-twitter"></i>
+    </a>
+    <a
+       href="https://www.instagram.com/m1abaa/"
+       class="btn btn-primary m-1" data-mdb-ripple-init
+       role="button"
+       rel="nofollow"
+       target="_blank"
+       >
+       <i class="fab fa-instagram"></i>
+    </a>
+    <a
+       href="https://github.com/M1aba"
+       class="btn btn-primary m-1" data-mdb-ripple-init
+       role="button"
+       rel="nofollow"
+       target="_blank"
+       >
+      <i class="fab fa-github"></i>
+    </a>
+  </div>
+  <blockquote class="blockquote">
+    <p style="text-align: center;" class="cursive-word">Even if you lost everything you still have you, and that's enough to start again.</p>
+    <h3 style="text-align: center;" class="cursive-word">It's never over.</h3>
+  </blockquote>  
+
+  <!-- Copyright -->
+  <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+    © 2025 Copyright:
+    <a class="text-dark" href="#">| coded with 💙 by Duy Anh (aka Miaba)</a>
+  </div>
+  <!-- Copyright -->
+</footer>
+
+    <!-- MDB -->
+    <script type="text/javascript" src="/MDB5-STANDARD-UI-KIT-Free-9 copy/js/mdb.umd.min.js"></script>
+</body>
+
+</html>

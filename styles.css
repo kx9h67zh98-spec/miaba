@@ -1,0 +1,183 @@
+* {
+  font-family: "Oswald", sans-serif;
+}
+
+.cursive-word {
+  font-family: "Edu NSW ACT Cursive", cursive;
+}
+/* Carousel styling */
+#introCarousel,
+.carousel-inner,
+.carousel-item,
+.carousel-item.active {
+  height: 100vh;
+}
+
+.carousel-item:nth-child(1) {
+  background-image: url('/Images/Image1.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+.carousel-item:nth-child(2) {
+  background-image: url('/Images/Image1.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+/* Height for devices larger than 576px */
+@media (min-width: 992px) {
+  #introCarousel {
+    margin-top: -58.59px;
+  }
+  #introCarousel,
+  .carousel-inner,
+  .carousel-item,
+  .carousel-item.active {
+    height: 50vh;
+  }
+}
+
+.navbar .nav-link {
+  color: #fff !important;
+  transition: color 0.3s ease; /* smooth fade */
+}
+
+.navbar .nav-link:hover {
+  color: cyan !important;
+}
+
+input.form-control,
+  textarea.form-control {
+    border: none;
+    border-bottom: 2px solid black; /* black underline */
+    border-radius: 0;
+    box-shadow: none;
+    outline: none;
+    background-color: transparent;
+    transition: border-color 0.3s ease; /* smooth color change */
+  }
+
+  /* Hover effect */
+  input.form-control:hover,
+  textarea.form-control:hover {
+    border-bottom: 2px solid black;
+  }
+
+  /* Focus effect (when typing) */
+  input.form-control:focus,
+  textarea.form-control:focus {
+    border-bottom: 2px solid blue;
+    box-shadow: none;
+  }
+
+  .form-label {
+    position: absolute;
+    top: -20px;
+    left: 5px;
+    font-size: 14px;
+    color: #555;
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+  }
+
+  /* Hidden label with fade */
+  .form-label.hidden {
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  .form-outline {
+    position: relative;
+    margin-bottom: 1.5rem;
+  }
+  
+  .error-message {
+    color: red;
+    font-size: 13px;
+    margin-top: 5px;
+    display: none; /* hidden by default */
+  }
+
+/* Profile */
+/* Left Column */
+.left-col {
+  background-color: #f3e9e4;
+  padding: 20px;
+  transition: background-color 0.3s ease;
+}
+.left-col:hover {
+  background-color: #e9ded7;
+}
+/* Section Titles */
+.section-title {
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-top: 20px;
+  border-bottom: 2px solid #000;
+  padding-bottom: 5px;
+}
+/* Name and Role */
+.name {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+.role {
+  font-size: 1rem;
+  color: #555;
+}
+/* Skill Bars */
+.skill-bar {
+  height: 6px;
+  background-color: #ddd;
+  border-radius: 5px;
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+.skill-fill {
+  height: 100%;
+  background-color: #000;
+  transition: width 0.5s ease;
+}
+.skill-bar:hover .skill-fill {
+  background-color: #333;
+}
+/* Links */
+a {
+  text-decoration: none;
+  color: #0d6efd;
+  transition: color 0.3s ease;
+}
+a:hover {
+  color: #084298;
+  text-decoration: underline;
+}
+/* Right Column Card Effect */
+.right-col {
+  padding: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.right-col:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+  background-color: #fff;
+  border-radius: 8px;
+}
+/* Mobile Adjustments */
+@media (max-width: 768px) {
+  .left-col {
+    margin-bottom: 20px;
+  }
+}
+/* Profile */
+.profile-img {
+  width: 150px;          /* control avatar size */
+  height: auto;          /* keep full height, no crop */
+  border-radius: 12px;   /* soft rectangle corners */
+  object-fit: contain; 
+  margin: 0 auto 15px auto;  /* center above your name */
+  border: 3px solid #333;
+  background-color: #ffffff; /* in case image has transparent parts */
+}
