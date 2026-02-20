@@ -1,29 +1,30 @@
-<!DOCTYPE html>
-<html lang="en">
-
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
+  <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet" />
-
-  <link rel="stylesheet" href="./styles.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
-
-  <!-- MDB local files (encode space as %20 for GitHub Pages) -->
-  <link rel="stylesheet" href="./MDB5-STANDARD-UI-KIT-Free-9%20copy/css/mdb.min.css" />
-  <link rel="icon" href="./MDB5-STANDARD-UI-KIT-Free-9%20copy/img/mdb-favicon.ico" type="image/x-icon" />
-
   <link href="https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Cursive:wght@400..700&family=Oswald:wght@200..700&display=swap"
         rel="stylesheet" />
 
+  <!-- MDB (Bootstrap) -->
+  <link rel="stylesheet" href="./mdb/css/mdb.min.css" />
+  <link rel="icon" href="./mdb/img/mdb-favicon.ico" type="image/x-icon" />
+
+  <!-- Your CSS (load AFTER MDB to override) -->
+  <link rel="stylesheet" href="./styles.css" />
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+
+  <!-- Your JS -->
   <script src="./script.js" defer></script>
+
   <title>Miaba's Website</title>
 </head>
-
 <body>
   <!-- Main Navigation -->
   <header>
@@ -334,7 +335,7 @@
   </footer>
 
   <!-- MDB JS (MUST be relative on GitHub Pages) -->
-  <script type="text/javascript" src="./MDB5-STANDARD-UI-KIT-Free-9%20copy/js/mdb.umd.min.js"></script>
+  <script src="./mdb/js/mdb.umd.min.js"></script>
 </body>
 
 </html>
