@@ -1,369 +1,376 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
-    />
-    <link rel="stylesheet" href="/MDB5-STANDARD-UI-KIT-Free-9 copy/css/mdb.min.css" />
-    <link rel="icon" href="/MDB5-STANDARD-UI-KIT-Free-9 copy/img/mdb-favicon.ico" type="image/x-icon" />
-    <!-- one word -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Cursive:wght@400..700&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
-    <script src="script.js" defer></script>
-    <title>Miaba's Website</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap"
+    rel="stylesheet"
+  />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Cursive:wght@400..700&family=Oswald:wght@200..700&display=swap"
+    rel="stylesheet"
+  />
+
+  <!-- MDB (Bootstrap) -->
+  <link rel="stylesheet" href="./mdb/css/mdb.min.css" />
+  <link rel="icon" href="./mdb/img/mdb-favicon.ico" type="image/x-icon" />
+
+  <!-- Your CSS (AFTER MDB to override) -->
+  <link rel="stylesheet" href="./styles.css?v=2" />
+
+  <!-- Icons -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+  />
+
+  <!-- Your JS -->
+  <script src="./script.js" defer></script>
+
+  <title>My Profile | Miaba</title>
+
+  <style>
+    /* General link hover style */
+    a {
+      transition: color 0.3s ease, text-decoration-color 0.3s ease;
+      color: #555;
+    }
+    a:hover {
+      color: rgb(126, 71, 184);
+    }
+  </style>
 </head>
 
 <body>
-    <style>
-        /* General link hover style */
-        a {
-          transition: color 0.3s ease, text-decoration-color 0.3s ease;
-          color: #555;
-        }
-        a:hover {
-          color: rgb(126, 71, 184); /* Change to black when hovered */
-        }
-      </style>
-  <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-dark d-none d-lg-block" style="z-index: 2000;">
-    <div class="container-fluid">
-      <!-- Navbar brand -->
-      <a class="navbar-brand nav-link" target="_blank" href="index.html">
-        <strong class="cursive-word">Miaba</strong>
-      </a>
-      <button class="navbar-toggler" type="button" data-mdb-collapse-init data-mdb-target="#navbarExample01"
-              aria-controls="navbarExample01" aria-expanded="false" aria-label="Toggle navigation">
-        <i class="fas fa-bars"></i>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarExample01">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item active">
-            <a class="nav-link" aria-current="page" href="index.html">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="Detail-1.html">My Profile</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#" target="_blank">My Shelf</a>
-          </li>
-        </ul>
+  <!-- Main Navigation -->
+  <header>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark d-none d-lg-block" style="z-index: 2000;">
+      <div class="container-fluid">
+        <!-- Navbar brand -->
+        <a class="navbar-brand nav-link" href="./index.html">
+          <strong class="cursive-word">Miaba</strong>
+        </a>
 
-        <ul class="navbar-nav d-flex flex-row">
-          <!-- Icons -->
-          <li class="nav-item me-3 me-lg-0">
-            <a class="nav-link" href="https://www.youtube.com/@miaba5547" rel="nofollow"
-               target="_blank">
-              <i class="fab fa-youtube"></i>
-            </a>
-          </li>
-          <li class="nav-item me-3 me-lg-0">
-            <a class="nav-link" href="https://www.facebook.com/aoduyanh.989023" rel="nofollow" target="_blank">
-              <i class="fab fa-facebook-f"></i>
-            </a>
-          </li>
-          <li class="nav-item me-3 me-lg-0">
-            <a class="nav-link" href="https://www.instagram.com/m1abaa/" rel="nofollow" target="_blank">
-              <i class="fab fa-instagram"></i>
-            </a>
-          </li>
-          <li class="nav-item me-3 me-lg-0">
-            <a class="nav-link" href="https://x.com/Miaba339997" rel="nofollow" target="_blank">
-              <i class="fab fa-twitter"></i>
-            </a>
-          </li>
-          <li class="nav-item me-3 me-lg-0">
-            <a class="nav-link" href="https://github.com/M1aba" rel="nofollow" target="_blank">
-              <i class="fab fa-github"></i>
-            </a>
-          </li>
-        </ul>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-mdb-collapse-init
+          data-mdb-target="#navbarExample01"
+          aria-controls="navbarExample01"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <i class="fas fa-bars"></i>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarExample01">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item active">
+              <a class="nav-link" aria-current="page" href="./index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./Detail-1.html">My Profile</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" target="_blank" rel="noopener noreferrer">My Shelf</a>
+            </li>
+          </ul>
+
+          <ul class="navbar-nav d-flex flex-row">
+            <!-- Icons -->
+            <li class="nav-item me-3 me-lg-0">
+              <a class="nav-link" href="https://www.youtube.com/@miaba5547" rel="nofollow noopener noreferrer" target="_blank">
+                <i class="fab fa-youtube"></i>
+              </a>
+            </li>
+            <li class="nav-item me-3 me-lg-0">
+              <a class="nav-link" href="https://www.facebook.com/aoduyanh.989023" rel="nofollow noopener noreferrer" target="_blank">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+            </li>
+            <li class="nav-item me-3 me-lg-0">
+              <a class="nav-link" href="https://www.instagram.com/m1abaa/" rel="nofollow noopener noreferrer" target="_blank">
+                <i class="fab fa-instagram"></i>
+              </a>
+            </li>
+            <li class="nav-item me-3 me-lg-0">
+              <a class="nav-link" href="https://x.com/Miaba339997" rel="nofollow noopener noreferrer" target="_blank">
+                <i class="fab fa-twitter"></i>
+              </a>
+            </li>
+            <li class="nav-item me-3 me-lg-0">
+              <a class="nav-link" href="https://github.com/M1aba" rel="nofollow noopener noreferrer" target="_blank">
+                <i class="fab fa-github"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
-    </div>
-  </nav>
-  <!-- Navbar -->
+    </nav>
+    <!-- Navbar -->
 
-  <!-- Carousel wrapper -->
-  <div id="introCarousel" class="carousel slide carousel-fade shadow-2-strong" data-mdb-carousel-init>
-    <!-- Indicators -->
-    <div class="carousel-indicators">
-      <li data-mdb-target="#introCarousel" data-mdb-slide-to="0" class="active"></li>
-      <li data-mdb-target="#introCarousel" data-mdb-slide-to="1"></li>
-    </div>
+    <!-- Carousel wrapper (optional, keep if you want the same hero section) -->
+    <div id="introCarousel" class="carousel slide carousel-fade shadow-2-strong" data-mdb-carousel-init>
+      <!-- Indicators -->
+      <div class="carousel-indicators">
+        <li data-mdb-target="#introCarousel" data-mdb-slide-to="0" class="active"></li>
+        <li data-mdb-target="#introCarousel" data-mdb-slide-to="1"></li>
+      </div>
 
-    <!-- Inner -->
-    <div class="carousel-inner">
-      <!-- Single item -->
-      <div class="carousel-item active">
-        <div class="mask" style="background-color: rgba(0, 0, 0, 0.6);">
-          <div class="d-flex justify-content-center align-items-center h-100">
-            <div class="text-white text-center" data-mdb-theme="dark">
-              <h1 class="mb-3">Hi, my name is Duy Anh</h1>
-              <h5 class="mb-4">A second-year university student with a passion for coding</h5>
-              <a
-                 class="btn btn-outline-light btn-lg m-2" data-mdb-ripple-init
-                 role="button"
-                 rel="nofollow"
-                 href="index.html?scroll=footer" onclick="scrollToFooter()"
-                 >Contact For Work</a>
-              <a
-                 class="btn btn-outline-light btn-lg m-2" data-mdb-ripple-init
-                 href="Detail-1.html"
-                 role="button"
-                 >My Profile</a
+      <!-- Inner -->
+      <div class="carousel-inner">
+        <!-- Slide 1 -->
+        <div class="carousel-item active">
+          <div class="mask" style="background-color: rgba(0, 0, 0, 0.6);">
+            <div class="d-flex justify-content-center align-items-center h-100">
+              <div class="text-white text-center" data-mdb-theme="dark">
+                <h1 class="mb-3">Hi, my name is Duy Anh</h1>
+                <h5 class="mb-4">A second-year university student with a passion for coding</h5>
+
+                <!-- Link back to index footer -->
+                <a
+                  class="btn btn-outline-light btn-lg m-2"
+                  data-mdb-ripple-init
+                  role="button"
+                  rel="nofollow"
+                  href="./index.html#pageFooter"
                 >
+                  Contact For Work
+                </a>
+
+                <a
+                  class="btn btn-outline-light btn-lg m-2"
+                  data-mdb-ripple-init
+                  href="./Detail-1.html"
+                  role="button"
+                >
+                  My Profile
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 2 -->
+        <div class="carousel-item">
+          <div class="mask" style="background-color: rgba(0, 0, 0, 0.7);">
+            <div class="d-flex justify-content-center align-items-center h-100">
+              <div class="text-white text-center">
+                <h3 style="color: #E0E0E0;">
+                  As a passionate and dedicated student, I am eager to apply my skills and creativity to contribute to your team.
+                  Through my university projects, I have developed strong problem-solving abilities and the capacity to innovate in collaborative environments.
+                  I am enthusiastic about bringing fresh ideas, a strong work ethic, and a willingness to learn from talented professionals, while making a meaningful contribution to your organization.
+                </h3>
+              </div>
             </div>
           </div>
         </div>
       </div>
+      <!-- Inner -->
 
-      <!-- Single item -->
-      <div class="carousel-item">
-        <div class="mask" style="background-color: rgba(0, 0, 0, 0.7);">
-          <div class="d-flex justify-content-center align-items-center h-100">
-            <div class="text-white text-center">
-              <h3 style="color: #E0E0E0;">As a passionate and dedicated student, I am eager to apply my skills and creativity to contribute to your team. Through my university projects, I have developed strong problem-solving abilities and the capacity to innovate in collaborative environments. I am enthusiastic about bringing fresh ideas, a strong work ethic, and a willingness to learn from talented professionals, while making a meaningful contribution to your organization.</h3>
-            </div>
-          </div>
-        </div>
+      <!-- Controls -->
+      <a class="carousel-control-prev" href="#introCarousel" role="button" data-mdb-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#introCarousel" role="button" data-mdb-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+    <!-- Carousel wrapper -->
+  </header>
+  <!--Main Navigation-->
+
+  <!-- Main Content -->
+  <main class="container my-4">
+    <div class="row">
+      <!-- Left Column -->
+      <div class="col-md-4 left-col">
+        <!-- FIX: remove leading / -->
+        <img src="./Images/Unknown.jpeg" alt="Đào Duy Anh" class="profile-img" />
+
+        <div class="name">Đào Duy Anh</div>
+        <div class="role"><strong>Programmer</strong></div>
+
+        <p class="mt-2">
+          Ho Chi Minh City, Vietnam<br />
+          14.02, My An Apartment, Street 19, 70000<br />
+          duyah110506@gmail.com<br />
+          +84 967836483
+        </p>
+
+        <div class="section-title">Skills</div>
+        <p>Front-end</p>
+        <div class="skill-bar"><div class="skill-fill" style="width: 70%"></div></div>
+
+        <p>Back-end</p>
+        <div class="skill-bar"><div class="skill-fill" style="width: 60%"></div></div>
+
+        <p>Unity (Game Development)</p>
+        <div class="skill-bar"><div class="skill-fill" style="width: 60%"></div></div>
+
+        <p>Arduino & Robotics</p>
+        <div class="skill-bar"><div class="skill-fill" style="width: 80%"></div></div>
+
+        <p>Presentation</p>
+        <div class="skill-bar"><div class="skill-fill" style="width: 85%"></div></div>
+
+        <p>Communication</p>
+        <div class="skill-bar"><div class="skill-fill" style="width: 90%"></div></div>
+
+        <div class="section-title">Relevant Skills</div>
+        <p>Communication & Stakeholder Management</p>
+        <p>Team Collaboration</p>
+        <p>Problem Solving</p>
+        <p>Time Management & Scheduling</p>
+        <p>Adaptability & Self-Learning</p>
+        <p>Leadership & Group Management</p>
+        <p>Coaching / Mentoring</p>
+
+        <div class="section-title">Languages</div>
+        <p>English – IELTS 6.0</p>
+        <p>German – A2 level (in progress)</p>
       </div>
-    </div>
-    <!-- Inner -->
 
-    <!-- Controls -->
-    <a class="carousel-control-prev" href="#introCarousel" role="button" data-mdb-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="sr-only">Previous</span>
-    </a>
-    <a class="carousel-control-next" href="#introCarousel" role="button" data-mdb-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="sr-only">Next</span>
-    </a>
-  </div>
-  <!-- Carousel wrapper -->
-</header>
-<!--Main Navigation-->
+      <!-- Right Column -->
+      <div class="col-md-8 right-col p-4">
+        <div class="section-title">Experience</div>
 
-<!-- Main Content -->
-<div class="container my-4">
-  <div class="row">
-    <!-- Left Column -->
-    <div class="col-md-4 left-col">
-      <img src="/Images/Unknown.jpeg" alt="Đào Duy Anh" class="profile-img">
-      <div class="name">Đào Duy Anh</div>
-      <div class="role"><strong>Programmer</strong></div>
-      <p class="mt-2">
-        Ho Chi Minh City, Vietnam<br>
-        14.02, My An Apartment, Street 19, 70000<br>
-        duyah110506@gmail.com<br>
-        +84 967836483
-      </p>
+        <h6><strong>University Projects</strong></h6>
+        <p><strong>Web Development, Game Development & Robotics – 2024 – Present</strong></p>
+        <ul>
+          <li>Developed multiple academic projects focusing on <strong>web applications</strong> using modern technologies.</li>
+          <li>Applied knowledge of <strong>JavaScript, Python, C, C++, and C#</strong> to build and enhance project functionality.</li>
+          <li>Currently expanding expertise in <strong>backend development</strong> and implementing server-side logic for web applications.</li>
+          <li>Created interactive gameplay features using <strong>Unity</strong>, including scripting, asset integration, and performance optimization.</li>
+          <li>Collaborated in team-based assignments, practicing <strong>version control (Git)</strong> and agile project workflows.</li>
+          <li>Developed a 2D Unity game, <strong>Snow Broader</strong> (inspired by Ski Safari), coding all core gameplay logic, physics, UI, and scoring systems while collaborating with an artist for characters and environments.</li>
+          <li>Designing an Arduino-based <strong>Soccerbot</strong> project (in progress), building motor and sensor control logic and preparing to participate in the university Soccerbot competition in January 2025.</li>
+        </ul>
 
-      <div class="section-title">Skills</div>
-      <p>Front-end</p>
-      <div class="skill-bar"><div class="skill-fill" style="width:70%"></div></div>
+        <h6><strong>Snow Broader – Unity 2D Game</strong></h6>
+        <p>
+          <strong>Objective:</strong>
+          Build a 2D endless-runner game inspired by Ski Safari to practice C# scripting and Unity game development.
+        </p>
+        <p>
+          <strong>What I learned:</strong>
+          Gained hands-on experience fixing and debugging 2D games, writing C# scripts for movement, collisions and scoring systems,
+          and working with Unity scenes, assets and UI.
+        </p>
 
-      <p>Back-end</p>
-      <div class="skill-bar"><div class="skill-fill" style="width:60%"></div></div>
+        <h6 class="mt-3"><strong>Soccerbot – Arduino Robotics (In Progress)</strong></h6>
+        <p>
+          <strong>Objective:</strong>
+          Design and build an autonomous soccer robot using Arduino, radar sensors to detect the ball, and a solenoid mechanism for ball kicking
+          to compete in the university Soccerbot competition.
+        </p>
+        <p>
+          <strong>What I am learning:</strong>
+          Developing problem-solving skills by troubleshooting wiring and connections, implementing control logic for motors and the solenoid,
+          and improving project management and teamwork throughout the build process.
+        </p>
 
-      <p>Unity (Game Development)</p>
-      <div class="skill-bar"><div class="skill-fill" style="width:60%"></div></div>
-
-      <p>Arduino & Robotics</p>
-      <div class="skill-bar"><div class="skill-fill" style="width:80%"></div></div>
-
-      <p>Presentation</p>
-      <div class="skill-bar"><div class="skill-fill" style="width:85%"></div></div>
-
-      <p>Communication</p>
-      <div class="skill-bar"><div class="skill-fill" style="width:90%"></div></div>
-
-      <div class="section-title">Relevant Skills</div>
-      <p>Communication & Stakeholder Management</p>
-      <p>Team Collaboration</p>
-      <p>Problem Solving</p>
-      <p>Time Management & Scheduling</p>
-      <p>Adaptability & Self-Learning</p>
-      <p>Leadership & Group Management</p>
-      <p>Coaching / Mentoring</p>
-
-      <div class="section-title">Languages</div>
-      <p>English – IELTS 6.0</p>
-      <p>German – A2 level (in progress)</p>
-    </div>
-
-    <!-- Right Column -->
-    <div class="col-md-8 p-4">
-      <div class="section-title">Experience</div>
-      <h6><strong>University Projects</strong></h6>
-      <p><strong>Web Development, Game Development & Robotics – 2024 – Present</strong></p>
-      <ul>
-        <li>Developed multiple academic projects focusing on <strong>web applications</strong> using modern technologies.</li>
-        <li>Applied knowledge of <strong>JavaScript, Python, C, C++, and C#</strong> to build and enhance project functionality.</li>
-        <li>Currently expanding expertise in <strong>backend development</strong> and implementing server-side logic for web applications.</li>
-        <li>Created interactive gameplay features using <strong>Unity</strong>, including scripting, asset integration, and performance optimization.</li>
-        <li>Collaborated in team-based assignments, practicing <strong>version control (Git)</strong> and agile project workflows.</li>
-        <li>Developed a 2D Unity game, <strong>Snow Broader</strong> (inspired by Ski Safari), coding all core gameplay logic, physics, UI, and scoring systems while collaborating with an artist for characters and environments.</li>
-        <li>Designing an Arduino-based <strong>Soccerbot</strong> project (in progress), building motor and sensor control logic and preparing to participate in the university Soccerbot competition in January 2025.</li>
-      </ul>
-
-<h6><strong>Snow Broader – Unity 2D Game</strong></h6>
-<p>
-  <strong>Objective:</strong>
-  Build a 2D endless-runner game inspired by Ski Safari to practice C# scripting
-  and Unity game development.
-</p>
-<p>
-  <strong>What I learned:</strong>
-  Gained hands-on experience fixing and debugging 2D games, writing C# scripts
-  for movement, collisions and scoring systems, and working with Unity scenes,
-  assets and UI.
-</p>
-
-<h6 class="mt-3"><strong>Soccerbot – Arduino Robotics (In Progress)</strong></h6>
-<p>
-  <strong>Objective:</strong>
-  Design and build an autonomous soccer robot using Arduino, radar sensors to
-  detect the ball, and a solenoid mechanism for ball kicking to compete in the
-  university Soccerbot competition.
-</p>
-<p>
-  <strong>What I am learning:</strong>
-  Developing problem-solving skills by troubleshooting wiring and connections,
-  implementing control logic for motors and the solenoid, and improving project
-  management and teamwork throughout the build process.
-</p>
-
-<h6 class="mt-3"><strong>English Teacher | [Ho Chi Minh City, Vietnam] | [01/2025 – 03/2025]</strong></h6>
-  
+        <h6 class="mt-3"><strong>English Teacher | Ho Chi Minh City, Vietnam | 01/2025 – 03/2025</strong></h6>
         <ul>
           <li>Planned and delivered English lessons aligned with students’ level and learning goals.</li>
           <li>Managed classroom behaviour and kept lessons engaging through interactive activities.</li>
           <li>Assessed student progress and provided clear feedback to help improve performance.</li>
-          <li>Communicated with parents/students to address learning needs and improve outcomes.</li> 
+          <li>Communicated with parents/students to address learning needs and improve outcomes.</li>
         </ul>
 
-<h6 class="mt-3"><strong>Basketball Teacher (Part-time) — Vinschool | [Ho Chi Minh City, Vietnam] | [07/2025 – 08/2025]</strong></h6>
+        <h6 class="mt-3"><strong>Basketball Teacher (Part-time) — Vinschool | Ho Chi Minh City, Vietnam | 07/2025 – 08/2025</strong></h6>
+        <!-- FIX: close this UL properly -->
+        <ul>
+          <li>Managed basketball classes for students, maintaining a safe, structured, and engaging learning environment.</li>
+          <li>Communicated consistently with students' parents to provide progress updates and address concerns professionally.</li>
+          <li>Solved classroom and behaviour issues quickly by adapting teaching approaches and setting clear expectations.</li>
+          <li>Planned training sessions and coordinated schedules to ensure smooth class operations.</li>
+        </ul>
 
-      <ul>
-        <li>Managed basketball classes for students, maintaining a safe, structured, and engaging learning environment.</li>
-        <li>Communicated consistently with students's parents to provide progress updates and address concerns professionally.</li>
-        <li>Solved classroom and behaviour issues quickly by adapting teaching approaches and setting clear expectations.</li>
-        <li>Planned training sessions and coordinated schedules to ensure smooth class operations.</li> 
+        <div class="section-title">Education</div>
+        <p>
+          <a href="https://vgu.edu.vn/study-programs/bachelor/cs" target="_blank" rel="noopener noreferrer">
+            VGU – Vietnamese-German University – Computer Science (CSE)
+          </a><br />
+          2024 – Present <br />
+          <a href="./6568.pdf" target="_blank" rel="noopener noreferrer">
+            Foundation Year GPA: 7.8 / 10 (view transcript)
+          </a><br />
+          Rank: Good
+        </p>
 
-      <div class="section-title">Education</div>
-      <p>
-        <a href="https://vgu.edu.vn/study-programs/bachelor/cs" target="_blank">
-          VGU – Vietnamese-German University – Computer Science (CSE)
-        </a><br>
-        2024 – Present <br>
-        <a href="6568.pdf" target="_blank">
-          Foundation Year GPA: 7.8 / 10 (view transcript)
-        </a><br>
-        Rank: Good
-      </p>
+        <div class="section-title"><strong>Member</strong></div>
+        <p>
+          VGU Cypher – IT Security Club<br />
+          Participated in Cybersecurity Student Contest Vietnam 2025
+        </p>
 
-      <div class="section-title"><strong>MEMBER</strong></div>
-      <p>
-        VGU Cypher – IT Security Club<br>
-        Participated in Cybersecurity Student Contest Vietnam 2025
-      </p>
+        <div class="section-title">Certifications and Licenses</div>
+        <p>
+          <a href="./ielts_certificate.pdf" target="_blank" rel="noopener noreferrer">
+            IELTS Certificate 6.0 (Click here to show the Certificate)
+          </a>
+        </p>
+        <p>AMC12 Math</p>
 
-      <div class="section-title">Certifications and Licenses</div>
-      <p>
-        <a href="ielts_certificate.pdf" target="_blank">
-          IELTS Certificate 6.0 (Click here to show the Certificate)
-        </a>
-      </p>
-      <p>AMC12 Math</p>
-
-      <div class="section-title">Additional Learning</div>
-      <ul>
-        <li>Udemy – <strong>Python Programming</strong> (in progress)</li>
-        <li>Udemy – <strong>Web Application Development</strong> (in progress)</li>
-        <li>Udemy – <strong>Game Development</strong> (self-study alongside Unity projects)</li>
-      </ul>
+        <div class="section-title">Additional Learning</div>
+        <ul>
+          <li>Udemy – <strong>Python Programming</strong> (in progress)</li>
+          <li>Udemy – <strong>Web Application Development</strong> (in progress)</li>
+          <li>Udemy – <strong>Game Development</strong> (self-study alongside Unity projects)</li>
+        </ul>
+      </div>
     </div>
-  </div>
-</div>
-<!-- Main Content -->
+  </main>
+  <!-- Main Content -->
 
-<!--Footer-->
-<footer class="bg-light text-lg-start">
-  <hr class="m-0" />
+  <!--Footer-->
+  <footer class="bg-light text-lg-start">
+    <hr class="m-0" />
 
-  <div class="text-center py-4 align-items-center">
-    <p>Follow Miaba on social media</p>
-    <a
-       href="https://www.youtube.com/@miaba5547"
-       class="btn btn-primary m-1" data-mdb-ripple-init
-       role="button"
-       rel="nofollow"
-       target="_blank"
-       >
-      <i class="fab fa-youtube"></i>
-    </a>
-    <a
-       href="https://www.facebook.com/aoduyanh.989023"
-       class="btn btn-primary m-1" data-mdb-ripple-init
-       role="button"
-       rel="nofollow"
-       target="_blank"
-       >
-      <i class="fab fa-facebook-f"></i>
-    </a>
-    <a
-       href="https://x.com/Miaba339997"
-       class="btn btn-primary m-1"
-       role="button"
-       rel="nofollow"
-       target="_blank"
-       >
-      <i class="fab fa-twitter"></i>
-    </a>
-    <a
-       href="https://www.instagram.com/m1abaa/"
-       class="btn btn-primary m-1" data-mdb-ripple-init
-       role="button"
-       rel="nofollow"
-       target="_blank"
-       >
-       <i class="fab fa-instagram"></i>
-    </a>
-    <a
-       href="https://github.com/M1aba"
-       class="btn btn-primary m-1" data-mdb-ripple-init
-       role="button"
-       rel="nofollow"
-       target="_blank"
-       >
-      <i class="fab fa-github"></i>
-    </a>
-  </div>
-  <blockquote class="blockquote">
-    <p style="text-align: center;" class="cursive-word">Even if you lost everything you still have you, and that's enough to start again.</p>
-    <h3 style="text-align: center;" class="cursive-word">It's never over.</h3>
-  </blockquote>  
+    <div class="text-center py-4 align-items-center">
+      <p>Follow Miaba on social media</p>
 
-  <!-- Copyright -->
-  <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
-    © 2025 Copyright:
-    <a class="text-dark" href="#">| coded with 💙 by Duy Anh (aka Miaba)</a>
-  </div>
-  <!-- Copyright -->
-</footer>
+      <a href="https://www.youtube.com/@miaba5547" class="btn btn-primary m-1" data-mdb-ripple-init role="button" rel="nofollow noopener noreferrer" target="_blank">
+        <i class="fab fa-youtube"></i>
+      </a>
+      <a href="https://www.facebook.com/aoduyanh.989023" class="btn btn-primary m-1" data-mdb-ripple-init role="button" rel="nofollow noopener noreferrer" target="_blank">
+        <i class="fab fa-facebook-f"></i>
+      </a>
+      <a href="https://x.com/Miaba339997" class="btn btn-primary m-1" role="button" rel="nofollow noopener noreferrer" target="_blank">
+        <i class="fab fa-twitter"></i>
+      </a>
+      <a href="https://www.instagram.com/m1abaa/" class="btn btn-primary m-1" data-mdb-ripple-init role="button" rel="nofollow noopener noreferrer" target="_blank">
+        <i class="fab fa-instagram"></i>
+      </a>
+      <a href="https://github.com/M1aba" class="btn btn-primary m-1" data-mdb-ripple-init role="button" rel="nofollow noopener noreferrer" target="_blank">
+        <i class="fab fa-github"></i>
+      </a>
+    </div>
 
-    <!-- MDB -->
-    <script type="text/javascript" src="/MDB5-STANDARD-UI-KIT-Free-9 copy/js/mdb.umd.min.js"></script>
+    <blockquote class="blockquote">
+      <p style="text-align: center;" class="cursive-word">
+        Even if you lost everything you still have you, and that's enough to start again.
+      </p>
+      <h3 style="text-align: center;" class="cursive-word">It's never over.</h3>
+    </blockquote>
+
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+      © 2025 Copyright:
+      <a class="text-dark" href="#">| coded with 💙 by Duy Anh (aka Miaba)</a>
+    </div>
+  </footer>
+
+  <!-- MDB JS -->
+  <script src="./mdb/js/mdb.umd.min.js"></script>
 </body>
-
 </html>
